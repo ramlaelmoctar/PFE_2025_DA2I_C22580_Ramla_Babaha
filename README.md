@@ -113,7 +113,8 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 
 
-* Special thanks to my academic advisor and jury panel
+* Special thanks to my academic advisor and jury panel:
+
 
 ---
 
