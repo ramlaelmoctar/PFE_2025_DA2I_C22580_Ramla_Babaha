@@ -98,7 +98,7 @@ The CNN is based on **EfficientNetB0**, modified as follows:
 * Custom FC layers with ReLU and Dropout
 * Output: Sigmoid activation for binary classification
 
-## 🧑‍💻 Author
+##  Author
 
 **Ramla**
 Bachelor’s Final Year Project — University of Nouakchott
