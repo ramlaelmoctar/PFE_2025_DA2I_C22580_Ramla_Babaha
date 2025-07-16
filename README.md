@@ -1,9 +1,5 @@
 # PFE_2025_DA2I_C22580_Ramla_Babaha
-A deepfake detection model based on EfficientNetB0 and MTCNN for face detection. A Flask backend with HTML/CSS front-end allows users to upload images and visualize predictions, highlighting whether faces are real or fake. The interface serves to demonstrate the model.
-
-# DeepFake-Detect 🎓🧠
-
-**DeepFake-Detect** is a deep learning-based project for detecting AI-generated deepfake images. This project was developed as part of my final year graduation project and features a web-based interface to visualize the detection process. It utilizes an EfficientNetB0 CNN model trained on multiple state-of-the-art deepfake datasets.
+A deepfake detection model based on EfficientNetB0 and MTCNN for face detection is a deep learning-based project for detecting AI-generated deepfake images. This project was developed as part of my final year graduation project and features a web-based interface to visualize the detection process. It utilizes an EfficientNetB0 CNN model trained on multiple state-of-the-art deepfake datasets.
 
 ## 🔍 Description
 
@@ -49,7 +45,7 @@ pip install -r requirements.txt
 #### Step 0: Extract video frames
 
 ```bash
-python 00-convert_video_to_image.py
+python convert_video_to_image.py
 ```
 
 This script converts deepfake/real videos into individual frame images and resizes them based on resolution.
@@ -57,7 +53,7 @@ This script converts deepfake/real videos into individual frame images and resiz
 #### Step 1: Face Detection and Cropping
 
 ```bash
-python 01a-crop_faces_with_mtcnn.py
+python crop_faces_with_mtcnn.py
 ```
 
 Uses MTCNN to detect and crop faces from frame images, adding margin and filtering with confidence score.
@@ -65,7 +61,7 @@ Uses MTCNN to detect and crop faces from frame images, adding margin and filteri
 #### Step 2: Balance and Split Datasets
 
 ```bash
-python 02-prepare_fake_real_dataset.py
+python prepare_fake_real_dataset.py
 ```
 
 Ensures dataset balance (fake vs. real) and splits data into train/val/test sets.
@@ -73,7 +69,7 @@ Ensures dataset balance (fake vs. real) and splits data into train/val/test sets
 #### Step 3: Train the CNN Model
 
 ```bash
-python 03-train_cnn.py
+python train_cnn.py
 ```
 
 Trains the EfficientNetB0 model (modified input/output layers) as a binary classifier.
